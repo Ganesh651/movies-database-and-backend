@@ -1,0 +1,42 @@
+###
+GET http://localhost:2000/movies
+###
+POST http://localhost:2000/movies
+Content-Type: application/json
+
+{
+  "directorId": 3,
+  "movieName": "The Lord of the Rings",
+  "leadActor": "Elijah Wood"
+}
+###
+
+POST http://localhost:2000/director
+Content-Type: application/json
+
+{
+  "directorName": "Aler Abbulu"
+}
+###
+
+GET http://localhost:2000/movies/8/ 
+###
+
+PUT http://localhost:2000/movies/8
+Content-Type: application/json
+
+{
+  "movieId": 8,
+  "directorId": 8,
+  "movieName": "The Lord",
+  "leadActor": "Wood"
+}
+###
+
+DELETE http://localhost:2000/movies/9/
+###
+
+GET http://localhost:2000/directors/
+###
+
+GET http://localhost:2000/directors/1/movies/
